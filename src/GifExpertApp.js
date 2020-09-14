@@ -1,9 +1,10 @@
 // rafc para crearlo
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
-    const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
+    const [categories, setCategories] = useState(['Neon Genesis Evangelion']);
     // const handleAdd = () => setCategories([...categories, prompt('¿Que categoria quieres añadir?')]);
 
     return (
@@ -13,9 +14,9 @@ export const GifExpertApp = () => {
             <AddCategory setCategories={setCategories} />
             <ol>
                 {
-                    categories.map((category) => {
-                        return <li key={category}>{category}</li>
-                    })
+                    categories.map((category) =>
+                        <GifGrid key={category} category={category} />
+                    )
                 }
             </ol>
         </>
