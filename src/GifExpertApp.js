@@ -4,7 +4,7 @@ import { AddCategory } from './components/AddCategory';
 import { GifGrid } from './components/GifGrid';
 
 export const GifExpertApp = () => {
-    const [categories, setCategories] = useState(['Neon Genesis Evangelion']);
+    const [categories, setCategories] = useState([]);
     // const handleAdd = () => setCategories([...categories, prompt('¿Que categoria quieres añadir?')]);
 
     return (
