@@ -7,19 +7,10 @@ exports[`Pruebas en <GifGridItem /> debe de mostrar <GifGridItem /> correctament
   <img
     alt="No hay gif amigo"
     className="gif"
+    src="https://localhost/test.jpg"
   />
-  <p />
-</div>
-`;
-
-exports[`Pruebas en <GifGridItem /> debe mostrar <GifGridItem /> correctamente 1`] = `
-<div
-  className="card animate__animated animate__fadeIn"
->
-  <img
-    alt="No hay gif amigo"
-    className="gif"
-  />
-  <p />
+  <p>
+    Titulo
+  </p>
 </div>
 `;
